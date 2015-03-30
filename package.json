@@ -1,0 +1,36 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "description": "Template files to create a static site.",
+  "main": "index.html",
+  "scripts": {
+    "build-all": "npm run build-coffee; npm run build-stylus; npm run build-jade",
+    "build-coffee": "coffee -c script.coffee.md",
+    "build-jade": "jade index.jade",
+    "build-stylus": "stylus style.styl",
+    "test": "coffee test.coffee.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MattMS/static_site_template.git"
+  },
+  "keywords": [
+    "CoffeeScript",
+    "Jade",
+    "static",
+    "Stylus",
+    "templates"
+  ],
+  "author": "Matt McKellar-Spence",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MattMS/static_site_template/issues"
+  },
+  "homepage": "https://github.com/MattMS/static_site_template/issues",
+  "dependencies": {
+    "coffee-script": "^1.9.1",
+    "jade": "^1.9.2",
+    "marked": "^0.3.3",
+    "stylus": "^0.50.0"
+  }
+}
